@@ -103,4 +103,13 @@ public class ContactBook {
         return false;
     }
 
+    public Contact searchContact(int number) {
+        for (int i = 0; i < counter; i++) {
+            if(contacts[i].getPhone() == number) {
+                return contacts[i];
+            }
+        }
+        return null;
+    }
+
 }
