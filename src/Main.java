@@ -83,6 +83,13 @@ public class Main {
     }
 
     private static void getName(Scanner in, ContactBook cBook) {
+        int phoneNumber = in.nextInt();in.nextLine();
+        Contact c = cBook.searchContact(phoneNumber);
+        if(c == null){
+            System.out.println(NO_NUMBER);
+        }else{
+            System.out.println(c.getName());
+        }
     }
 
     private static String getCommand(Scanner in) {
