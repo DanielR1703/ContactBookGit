@@ -76,6 +76,10 @@ public class Main {
     }
 
     private static void equalPhone(ContactBook cBook) {
+        if(cBook.hasSameNumber())
+            System.out.println(EQUAL_CONTACTS);
+        else
+            System.out.println(DIFFERENT_CONTACTS);
     }
 
     private static void getName(Scanner in, ContactBook cBook) {
